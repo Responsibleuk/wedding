@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Claire & Ben | Information</title>
+	<title>Claire & Ben | Home</title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- FAVICON -->
@@ -52,8 +52,46 @@
 				</div>
 			</div>
 			<!-- /.vlt-navigation-fullscreen-holder -->
-			<div class="vlt-hero-title-holder jarallax" style="background-image: url('assets/img/info.jpg');">
-				
+			<div class="vlt-hero-title-holder jarallax" style="background-image: url('assets/img/index.jpg');">
+				<div class="vlt-hero-title-inner">
+					<h1 class="vlt-hero-title">Claire & Ben's Wedding</h1>
+					<h1 class="vlt-hero-title">18:11:23 | 16:00</h1>
+					<h1 class="vlt-hero-title">Carousel | London</h1>
+					<p class="vlt-hero-subtitle" id="demo"><!-- Display the countdown timer in an element -->
+
+
+						<script>
+							// Set the date we're counting down to
+							var countDownDate = new Date("Nov 18, 2023 16:00:00").getTime();
+
+							// Update the count down every 1 second
+							var x = setInterval(function () {
+
+								// Get today's date and time
+								var now = new Date().getTime();
+
+								// Find the distance between now and the count down date
+								var distance = countDownDate - now;
+
+								// Time calculations for days, hours, minutes and seconds
+								var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+								var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+								var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+								var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+								// Display the result in the element with id="demo"
+								document.getElementById("demo").innerHTML = days + " day " + hours + " hrs "
+									+ minutes + " min " + seconds + " sec ";
+
+								// If the count down is finished, write some text
+								if (distance < 0) {
+									clearInterval(x);
+									document.getElementById("demo").innerHTML = "EXPIRED";
+								}
+							}, 1000);
+						</script>
+					</p>
+				</div>
 			</div>
 
 			<section class="vlt-main-padding" style="background-color: #f5f5f5;">
@@ -61,20 +99,94 @@
 					<div class="row">
 						<div class="col-md-12">
 							<div class="vlt-custom-title-holder center">
-								
-								<h3 class="vlt-custom-title">More Details Coming Soon</h3>
+								<h3 class="vlt-custom-title">“The streets of London have their map, but our passions are
+									uncharted. <br>What are you going to meet if you turn this corner?”</h3>
+								<span class="vlt-custom-subtitle">Virginia Woolf</span>
+
 							</div>
 							<!-- /.vlt-custom-title-holder center -->
 						</div>
-						
 					</div>
 				</div>
 			</section>
 
+			<!-- <section class="vlt-main-padding" style="background-color: #f5f5f5;">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="vlt-custom-title-holder center">
+								<span class="vlt-custom-subtitle">Claire & Ben</span>
+								<h3 class="vlt-custom-title">Are getting married</h3>
+							</div>
+							
+						</div>
+						<div class="col-md-4">
+							<div class="vlt-services top">
+								
+								<div class="vlt-services-content">
+									<h6 class="vlt-services-title">Venue</h6>
+									<p class="vlt-services-description">Carousel, 19-23 Charlotte St, London W1T 1RW</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-4">
+							<div class="vlt-services top">
+
+								<div class="vlt-services-content">
+									<h6 class="vlt-services-title">Timing</h6>
+									<p class="vlt-services-description">Please arrive at 4pm, dancing until midnight.
+									</p>
+								</div>
+							</div>
+							
+						</div>
+						<div class="col-md-4">
+							<div class="vlt-services top">
+
+								<div class="vlt-services-content">
+									<h6 class="vlt-services-title">Dress Code</h6>
+									<p class="vlt-services-description">Winter Cocktail</p>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section> -->
 
 
 
-			
+
+			<!-- /.vlt-hero-title-holder -->
+			<main class="vlt-main-holder vlt-main-padding">
+				<section class="vlt-main-padding-bottom">
+					<div class="container">
+
+						<div class="row">
+							<div class="col-md-6">
+								<div class="vlt-single-image mb30">
+									<a class="lightbox-link" href="assets/img/vespa.jpg">
+										<img src="assets/img/vespa.jpg" alt="">
+									</a>
+									<!-- <div class="vlt-single-image-caption top-left"><span>Office Vinero</span></div> -->
+								</div>
+								<!-- /.vlt-single-image mb30 -->
+							</div>
+							<div class="col-md-6">
+								
+								<h3 class="mb10">We're getting married</h3>
+								<p class="text-justify">
+									The most beautiful things are memories and moments and if you don't celebrate them, they can pass us by. 
+
+On November 18th we are celebrating our marriage, with an evening of fun and lots of it. There will be great food, drinks and dancing (well maybe not great dancing), but to make it perfect we need our amazing friends, because the more you celebrate life, the more there is in life to celebrate.</p>
+									<a href="info.html" class="vlt-btn vlt-btn-secondary">The Party</a>&nbsp;
+
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
 
 			<!-- /.vlt-main-holder vlt-main-padding -->
 		</div>
@@ -86,9 +198,10 @@
 						<a href="index.html" class="vlt-site-logo">
 							<img src="assets/img/logo.png" alt="Vinero" style="max-height: 13px">
 						</a>
-						
+
 						<div class="vlt-footer-copyright">
-							<p>Copyright © 2023. Web design by <a href="https://story-x.co.uk/" class="vlt-link reverse">StoryX</a></p>
+							<p>Copyright © 2023. Web design by <a href="https://story-x.co.uk/"
+									class="vlt-link reverse">StoryX</a></p>
 						</div>
 					</div>
 				</div>
